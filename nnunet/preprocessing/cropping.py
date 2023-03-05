@@ -19,7 +19,7 @@ from batchgenerators.utilities.file_and_folder_operations import *
 from multiprocessing import Pool
 from collections import OrderedDict
 
-
+#非零掩膜 
 def create_nonzero_mask(data):
     from scipy.ndimage import binary_fill_holes
     assert len(data.shape) == 4 or len(data.shape) == 3, "data must have shape (C, X, Y, Z) or shape (C, X, Y)"
